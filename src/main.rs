@@ -69,4 +69,9 @@ fn main() {
 
     println!("Result: {}", result);
 
+
+    // Only to prevent the console from closing immediately
+    println!("Press Enter to exit");
+    io::stdin().read_line(&mut input).expect("Failed to read line");
+
 }
